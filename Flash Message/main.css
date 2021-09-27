@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+#container {
+  position: relative;
+  margin: auto;
+  width: 700px;
+  height: 250px;
+  overflow: hidden;
+}
+
+#success-box {
+  position: absolute;
+  background: linear-gradient(to bottom right, #5efce8 40%, #abdcff 100%);
+  width: 35%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(203, 205, 211, 10);
+  left: 12%;
+}
+
+#error-box {
+  position: absolute;
+  background: linear-gradient(to bottom left, #feb692 40%, #ea5455 100%);
+  width: 35%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(203, 205, 211, 10);
+  right: 12%;
+}
+
+.icon {
+  position: absolute;
+  top: 19%;
+  left: 38.5%;
+  font-size: 35px;
+  z-index: 2;
+
+  animation: bounce 1s ease-in infinite;
+}
+
+h1 {
+  font-size: 0.9em;
+  font-weight: 100;
+  letter-spacing: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+.blue {
+  color: #00b7ff;
+}
+
+.red {
+  color: #d74177;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button-box {
+  position: absolute;
+  background: #fcfcfc;
+  width: 50%;
+  height: 15%;
+  top: 73%;
+  left: 25%;
+  border-radius: 20px;
+  border: none;
+  outline: 0;
+  box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.button-box:hover {
+  background: #efefef;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.alert {
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.message {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 40%;
+  top: 45%;
+}
+
+p {
+  margin-top: -5px;
+  font-size: 0.7em;
+  font-weight: 100;
+  color: #5e5e5e;
+  letter-spacing: 1px;
+}
+
+.shadow {
+  position: absolute;
+  width: 15%;
+  height: 3%;
+  opacity: 0.5;
+  background: #777;
+  left: 40%;
+  top: 41%;
+  border-radius: 50%;
+}
+
+.scale {
+  animation: scale 1s ease-in infinite;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-10px);
+  }
+}
